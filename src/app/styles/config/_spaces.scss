@@ -1,0 +1,16 @@
+@use "sass:math";
+
+//Spaces
+
+$space-default: 1rem;
+
+$space-xxxs: 0.125 * $space-default;
+$space-xxs: 0.25 * $space-default;
+$space-xs: 0.5 * $space-default;
+$space-s: 0.75 * $space-default;
+$space-m: 1 * $space-default;
+$space-l: 1.5 * $space-default;
+$space-xl: 2 * $space-default;
+$space-xxl: 3 * $space-default;
+$space-xxxl: 4 * $space-default;
+$space-xxxxl: 5 * $space-default;

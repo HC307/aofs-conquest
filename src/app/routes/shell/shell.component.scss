@@ -1,0 +1,25 @@
+.content-wrapper {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+
+  grid-template-columns: 15% 80%;
+
+  .grid-area-header {
+    grid-area: header;
+  }
+
+  .grid-area-sidebar {
+    grid-area: sidebar;
+  }
+
+  .grid-area-content {
+    grid-area: content;
+  }
+
+  .grid-area-footer {
+    grid-area: footer;
+  }
+}

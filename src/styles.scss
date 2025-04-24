@@ -1,0 +1,7 @@
+@use "sass:math";
+@use "app/styles" as *;
+
+body {
+  font-size: $font-size-default;
+  font-family: Arial, serif;
+}
