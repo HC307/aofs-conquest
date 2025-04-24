@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { ShellComponent } from './shell.component';
+import {ShellComponent} from './shell.component';
 
 describe('ShellComponent', () => {
   let component: ShellComponent;
@@ -10,7 +10,7 @@ describe('ShellComponent', () => {
     await TestBed.configureTestingModule({
       imports: [ShellComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ShellComponent);
     component = fixture.componentInstance;

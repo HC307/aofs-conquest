@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { NavLinkComponent } from './nav-link.component';
+import {NavLinkComponent} from './nav-link.component';
 
 describe('NavLinkComponent', () => {
   let component: NavLinkComponent;
@@ -10,7 +10,7 @@ describe('NavLinkComponent', () => {
     await TestBed.configureTestingModule({
       imports: [NavLinkComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(NavLinkComponent);
     component = fixture.componentInstance;
