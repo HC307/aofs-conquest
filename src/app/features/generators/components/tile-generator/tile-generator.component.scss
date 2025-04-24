@@ -1,0 +1,32 @@
+:host {
+  app-panel {
+    height: 12rem;
+    width: 36rem;
+    display: flex;
+
+    .wrapper {
+      display: grid;
+      width: 100%;
+      grid-template-areas:
+      "header header"
+      "controls output";
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 10% 90%;
+
+      .header {
+        grid-area: header;
+      }
+
+      .controls {
+        grid-area: controls;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+      .output {
+        grid-area: output;
+      }
+    }
+  }
+}

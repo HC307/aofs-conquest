@@ -2,7 +2,17 @@
 
 .content-wrapper {
   border: 1px solid black;
-  border-radius: 1rem;
-  margin: 5px;
+  border-radius: $size-xs;
   display: block;
+  width: 100%;
+  height: 100%;
+  padding: $size-s;
+  box-sizing: border-box;
+
+  div {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }

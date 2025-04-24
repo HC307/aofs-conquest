@@ -1,17 +1,19 @@
+@use "../../styles/config/_spaces" as *;
+
 :host {
-  height: 100%;
-  width: 100%;
-  display: flex;
 
   .content-wrapper {
     display: grid;
     grid-template-areas:
-    "header header"
-    "navbar content"
-    "footer footer";
-
-    grid-template-columns: 10% 90%;
-    grid-template-rows: 15% 80% 5%;
+        "header  header"
+        "navbar content"
+        "footer  footer";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 7rem 1fr 40px;
+    gap: $size-m;
+    height: 100vh;
+    padding: $size-m;
+    box-sizing: border-box;
 
     .grid-area-header {
       grid-area: header;
