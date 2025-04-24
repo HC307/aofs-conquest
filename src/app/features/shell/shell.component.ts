@@ -1,9 +1,8 @@
 import {Component} from '@angular/core';
-import {RouterOutlet} from '@angular/router';
 import {HeaderComponent} from '../../components/header/header.component';
 import {ContentComponent} from '../../components/content/content.component';
 import {FooterComponent} from '../../components/footer/footer.component';
-import {SideNavComponent} from '../../components/side-nav/side-nav.component';
+import {NavBarComponent} from '../../components/nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-shell',
@@ -11,7 +10,7 @@ import {SideNavComponent} from '../../components/side-nav/side-nav.component';
     HeaderComponent,
     ContentComponent,
     FooterComponent,
-    SideNavComponent
+    NavBarComponent,
   ],
   templateUrl: './shell.component.html',
   styleUrl: './shell.component.scss'

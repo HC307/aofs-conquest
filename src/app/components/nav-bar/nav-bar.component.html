@@ -1,0 +1,14 @@
+<app-panel>
+  <ul>
+    @for (route of routes; track route) {
+      @if (route.path?.length != 0) {
+        <li>
+          <app-nav-link
+            [route]="route.path"
+          >{{ route.title }}
+          </app-nav-link>
+        </li>
+      }
+    }
+  </ul>
+</app-panel>
