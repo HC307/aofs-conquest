@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {PanelComponent} from '../generic/panel/panel.component';
+import {PanelComponent} from '../../../../components/panel/panel.component';
 
 @Component({
   selector: 'app-content',

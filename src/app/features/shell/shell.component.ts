@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
-import {HeaderComponent} from '../../components/header/header.component';
-import {ContentComponent} from '../../components/content/content.component';
-import {FooterComponent} from '../../components/footer/footer.component';
-import {NavBarComponent} from '../../components/nav-bar/nav-bar.component';
+import {HeaderComponent} from './components/header/header.component';
+import {ContentComponent} from './components/content/content.component';
+import {FooterComponent} from './components/footer/footer.component';
+import {SideNavComponent} from './components/side-nav/side-nav.component';
 
 @Component({
   selector: 'app-shell',
@@ -10,7 +10,7 @@ import {NavBarComponent} from '../../components/nav-bar/nav-bar.component';
     HeaderComponent,
     ContentComponent,
     FooterComponent,
-    NavBarComponent,
+    SideNavComponent,
   ],
   templateUrl: './shell.component.html',
   styleUrl: './shell.component.scss'

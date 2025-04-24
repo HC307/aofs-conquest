@@ -1,24 +1,33 @@
-.content-wrapper {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "navbar"
-    "content"
-    "footer";
+:host {
+  height: 100%;
+  width: 100%;
+  display: flex;
 
-  .grid-area-header {
-    grid-area: header;
+  .content-wrapper {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "navbar content"
+    "footer footer";
+
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 15% 80% 5%;
+
+    .grid-area-header {
+      grid-area: header;
+    }
+
+    .grid-area-navbar {
+      grid-area: navbar;
+    }
+
+    .grid-area-content {
+      grid-area: content;
+    }
+
+    .grid-area-footer {
+      grid-area: footer;
+    }
   }
 
-  .grid-area-navbar {
-    grid-area: navbar;
-  }
-
-  .grid-area-content {
-    grid-area: content;
-  }
-
-  .grid-area-footer {
-    grid-area: footer;
-  }
 }

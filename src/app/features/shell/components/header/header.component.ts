@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {PanelComponent} from '../generic/panel/panel.component';
+import {PanelComponent} from '../../../../components/panel/panel.component';
 
 @Component({
   selector: 'app-header',
