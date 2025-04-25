@@ -1,3 +1,5 @@
+@use '../../../../styles' as *;
+
 :host {
   app-panel {
     height: 12rem;
@@ -22,10 +24,13 @@
         justify-content: center;
         align-items: center;
         display: flex;
+        flex-direction: column;
+        gap: $size-xxs;
       }
 
       .output {
         grid-area: output;
+        border: 1px solid black;
       }
     }
   }

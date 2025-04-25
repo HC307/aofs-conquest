@@ -5,12 +5,26 @@
     </div>
 
     <div class="controls">
+      Type 1
       <app-dropdown-select
-        [options]="test"
+        [options]="options"
+        (selectedOption)="option1 = $event"
       ></app-dropdown-select>
+      Type 2
+      <app-dropdown-select
+        [options]="options"
+        (selectedOption)="option2 = $event"
+      ></app-dropdown-select>
+
+      <app-button
+        [disabled]="disableGenerate()"
+        (click)="this.generate()"
+      >Generate
+      </app-button>
     </div>
 
-    <div class="output"
-    ></div>
+    <div class="output">
+      {{ this.output }}
+    </div>
   </div>
 </app-panel>

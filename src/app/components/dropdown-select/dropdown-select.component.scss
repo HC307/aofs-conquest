@@ -16,6 +16,8 @@
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
+  overflow-y: auto;
+  max-height: 12rem;
   position: absolute;
   background-color: #f1f1f1;
   min-width: 10rem;
