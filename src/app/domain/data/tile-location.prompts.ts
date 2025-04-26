@@ -1,10 +1,8 @@
 import {TilePrompt} from '../model/tile-prompt.type';
 import {TileType} from './tile.type';
 
-export const TilePrompts: TilePrompt[] = [
+export const TileLocationPrompts: TilePrompt[] = [
   {
-    prompt: 'This land is barren and empty. You find nothing',
-  }, {
     prompt: 'This field is lush and green. Wild animals roam these lands. You can build a Mount Stable here.',
     tiles: [TileType.GRASSLANDS, TileType.HILLS],
   }, {
