@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { TileGeneratorComponent } from './tile-generator.component';
+import {TileGeneratorComponent} from './tile-generator.component';
 
 describe('TileGeneratorComponent', () => {
   let component: TileGeneratorComponent;
@@ -10,7 +10,7 @@ describe('TileGeneratorComponent', () => {
     await TestBed.configureTestingModule({
       imports: [TileGeneratorComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(TileGeneratorComponent);
     component = fixture.componentInstance;

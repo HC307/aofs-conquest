@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {TileGeneratorComponent} from './components/tile-generator/tile-generator.component';
 
 @Component({

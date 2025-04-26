@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { RandomGeneratorService } from './random-generator.service';
+import {RandomGeneratorService} from './random-generator.service';
 
 describe('RandomGeneratorService', () => {
   let service: RandomGeneratorService;

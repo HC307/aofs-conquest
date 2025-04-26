@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { SideNavButtonComponent } from './side-nav-button.component';
+import {SideNavButtonComponent} from './side-nav-button.component';
 
 describe('SideNavButtonComponent', () => {
   let component: SideNavButtonComponent;
@@ -10,7 +10,7 @@ describe('SideNavButtonComponent', () => {
     await TestBed.configureTestingModule({
       imports: [SideNavButtonComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(SideNavButtonComponent);
     component = fixture.componentInstance;

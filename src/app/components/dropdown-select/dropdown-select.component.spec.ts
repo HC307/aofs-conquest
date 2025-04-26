@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { DropdownSelectComponent } from './dropdown-select.component';
+import {DropdownSelectComponent} from './dropdown-select.component';
 
 describe('DropdownSelectComponent', () => {
   let component: DropdownSelectComponent;
@@ -10,7 +10,7 @@ describe('DropdownSelectComponent', () => {
     await TestBed.configureTestingModule({
       imports: [DropdownSelectComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(DropdownSelectComponent);
     component = fixture.componentInstance;
