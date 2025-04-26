@@ -1,0 +1,19 @@
+@use '../../../../styles' as *;
+
+:host {
+  @media (max-width: $mobile-layout) {
+    display: none;
+  }
+
+  .header-wrapper {
+    h1 {
+      font-size: $font-h1;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: $font-subtitle;
+      margin: 0;
+    }
+  }
+}

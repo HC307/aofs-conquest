@@ -1,5 +1,17 @@
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+@use "../../../../styles" as *;
+
+:host {
+  ul {
+    //Mobile
+    @media (max-width: $mobile-layout) {
+      display: flex;
+      li {
+        display: inline-block;
+      }
+    }
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }

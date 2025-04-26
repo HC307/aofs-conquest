@@ -80,7 +80,7 @@ export class TileGeneratorComponent {
   //#region Methods
 
   public generate() {
-    if(!this.config)
+    if (!this.config)
       return;
 
     this.output = this.randomService.generateTilePrompt(this.config, this.option1, this.option2);

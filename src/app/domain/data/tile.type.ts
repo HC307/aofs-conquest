@@ -1,5 +1,6 @@
 export enum TileType {
   NONE = 'None',
+  ANY = 'Any',
   BEACH = 'Beach',
   BROKEN_LANDS = 'Broken Lands',
   DEAD_FOREST = 'Dead Forest',

@@ -1,15 +1,27 @@
-@use "../../styles/config/_spaces" as *;
+@use "../../styles" as *;
 
 :host {
 
   .content-wrapper {
-    display: grid;
-    grid-template-areas:
+    @media (max-width: $mobile-layout) {
+      grid-template-areas:
+        "navbar"
+        "content"
+        "footer";
+      grid-template-columns: 100%;
+      grid-template-rows: 7rem 1fr 40px;
+    }
+
+    @media (min-width: $mobile-layout) {
+      grid-template-areas:
         "header  header"
         "navbar content"
         "footer  footer";
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: 7rem 1fr 40px;
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: 7rem 1fr 40px;
+    }
+
+    display: grid;
     gap: $size-m;
     height: 100vh;
     padding: $size-m;

@@ -22,6 +22,8 @@ export class RandomGeneratorService {
 
     r += this.roll(conf.locationPct) ? this.generateTileLocationPrompt(option1, option2) : '';
     r += this.roll(conf.buildingPct) ? this.generateTileBuildingPrompt(option1, option2) : '';
+    r += this.roll(conf.lootPct) ? this.generateTileLootPrompt(option1, option2) : '';
+    r += this.roll(conf.encounterPct) ? this.generateTileEncounterPrompt(option1, option2) : '';
 
     return r == '' ? TilePrompts.empty : r;
   }
@@ -30,18 +32,36 @@ export class RandomGeneratorService {
     let type1 = this.findTileType(option1);
     let type2 = this.findTileType(option2);
 
-    let filteredPrompts = TileLocationPrompts.filter(prompt => prompt.tiles?.includes(type1) || prompt.tiles?.includes(type2) || prompt.tiles?.length == 0 || !prompt.tiles);
+    let filteredPrompts = TileLocationPrompts.filter(prompt => prompt.tiles?.includes(type1) || prompt.tiles?.includes(type2) || prompt.tiles?.includes(TileType.ANY));
 
-    return this.RandomSelect(filteredPrompts)?.prompt || 'You find yourself outside of reality. Please write a bug report.';
+    return this.RandomSelect(filteredPrompts)?.prompt || '';
   }
 
   generateTileBuildingPrompt(option1?: string, option2?: string): string {
     let type1 = this.findTileType(option1);
     let type2 = this.findTileType(option2);
 
-    let filteredPrompts = TileBuildingPrompts.filter(prompt => prompt.tiles?.includes(type1) || prompt.tiles?.includes(type2) || prompt.tiles?.length == 0 || !prompt.tiles);
+    let filteredPrompts = TileBuildingPrompts.filter(prompt => prompt.tiles?.includes(type1) || prompt.tiles?.includes(type2) || prompt.tiles?.includes(TileType.ANY));
 
-    return this.RandomSelect(filteredPrompts)?.prompt || 'You find yourself outside of reality. Please write a bug report.';
+    return this.RandomSelect(filteredPrompts)?.prompt || '';
+  }
+
+  generateTileLootPrompt(option1?: string, option2?: string): string {
+    let type1 = this.findTileType(option1);
+    let type2 = this.findTileType(option2);
+
+    let filteredPrompts = TilePrompts.loot.filter(prompt => prompt.tiles?.includes(type1) || prompt.tiles?.includes(type2) || prompt.tiles?.includes(TileType.ANY));
+
+    return this.RandomSelect(filteredPrompts)?.prompt || '';
+  }
+
+  generateTileEncounterPrompt(option1?: string, option2?: string): string {
+    let type1 = this.findTileType(option1);
+    let type2 = this.findTileType(option2);
+
+    let filteredPrompts = TilePrompts.encounters.filter(prompt => prompt.tiles?.includes(type1) || prompt.tiles?.includes(type2) || prompt.tiles?.includes(TileType.ANY));
+
+    return this.RandomSelect(filteredPrompts)?.prompt || '';
   }
 
   //#endregion Tile Prompts
