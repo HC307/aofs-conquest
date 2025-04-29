@@ -1,0 +1,10 @@
+:host {
+  .tile {
+    box-sizing: border-box;
+    padding: 5px;
+    height: 26rm;
+    width: 26rm;
+    border: 1px solid black;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+}

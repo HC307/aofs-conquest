@@ -2,18 +2,36 @@
 
 :host {
   app-panel {
-    height: 12rem;
-    width: 36rem;
+    @media (max-width: $mobile-layout) {
+      height: 100rm;
+
+      .wrapper {
+        grid-template-areas:
+      "header"
+      "controls"
+      "output";
+      }
+    }
+
+    @media(min-width: $mobile-layout) {
+      height: 12rem;
+      width: 36rem;
+
+      .wrapper {
+        grid-template-areas:
+      "header header"
+      "controls output";
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 10% 90%;
+      }
+    }
+
+
     display: flex;
 
     .wrapper {
       display: grid;
       width: 100%;
-      grid-template-areas:
-      "header header"
-      "controls output";
-      grid-template-columns: 30% 70%;
-      grid-template-rows: 10% 90%;
 
       .header {
         grid-area: header;
