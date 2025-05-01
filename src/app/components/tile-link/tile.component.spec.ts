@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TileLinkComponent } from './tile-link.component';
+import { TileComponent } from './tile.component';
 
 describe('TileComponent', () => {
-  let component: TileLinkComponent;
-  let fixture: ComponentFixture<TileLinkComponent>;
+  let component: TileComponent;
+  let fixture: ComponentFixture<TileComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TileLinkComponent]
+      imports: [TileComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TileLinkComponent);
+    fixture = TestBed.createComponent(TileComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

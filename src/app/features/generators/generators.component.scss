@@ -1,0 +1,9 @@
+@use '../../styles' as *;
+
+:host{
+  .generator-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}

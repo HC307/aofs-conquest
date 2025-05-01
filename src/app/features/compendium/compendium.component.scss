@@ -1,10 +1,26 @@
+@use '../../styles' as *;
+
 :host {
   .content-wrapper {
 
-    .card-wrapper {
-      display: grid;
-      grid-template-columns: auto auto auto auto auto;
-      gap: 2rem;
+    .categories {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      border: 1px solid black;
+      padding: 0;
+
+      .category-button {
+        border: none;
+        border-right: 1px solid black;
+        cursor: pointer;
+      }
+
+      button.active {
+        cursor: unset;
+        background-color: #333333 ;
+        color: white;
+      }
     }
   }
 }

@@ -3,6 +3,9 @@ import {HomeComponent} from './features/home/home.component';
 import {RulesComponent} from './features/rules/rules.component';
 import {GeneratorsComponent} from './features/generators/generators.component';
 import {CompendiumComponent} from './features/compendium/compendium.component';
+import {TileCompendiumComponent} from './features/compendium/tile-compendium/tile-compendium.component';
+import {BuildingsCompendiumComponent} from './features/compendium/buildings-compendium/buildings-compendium.component';
+import {TrophiesCompendiumComponent} from './features/compendium/trophies-compendium/trophies-compendium.component';
 
 export const routes: Routes = [
   {
@@ -16,15 +19,31 @@ export const routes: Routes = [
     component: RulesComponent
   },
   {
-    title: 'Generators',
-    path: 'generators',
-    component: GeneratorsComponent,
-
-  },
-  {
     title: 'Compendium',
     path: 'compendium',
     component: CompendiumComponent,
+    children: [
+      {
+        path: 'tiles',
+        title: 'Tiles',
+        component: TileCompendiumComponent,
+      },
+      {
+        path: 'buildings',
+        title: 'Buildings',
+        component: BuildingsCompendiumComponent,
+      },
+      {
+        path: 'trophies',
+        title: 'Trophies',
+        component: TrophiesCompendiumComponent,
+      }
+    ]
+  },
+  {
+    title: 'Generators',
+    path: 'generators',
+    component: GeneratorsComponent,
   },
   {
     path: '',
